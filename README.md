@@ -8,7 +8,7 @@ Remove past comments and posts from reddit
 
 2. Install praw
 
-`sudo pip3 install praw`
+`pip3 install praw`
  
 # Usage
 Create Reddit application
