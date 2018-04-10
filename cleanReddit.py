@@ -1,6 +1,7 @@
 #! /usr/bin/python3
 import praw
 import time
+import getpass
 
 
 def removeComments(username, reddit, requests):
@@ -28,7 +29,7 @@ def removePosts(username, reddit, requests):
 
 client_id = input("client_id=")
 client_secret = input("client_secret=")
-password = input("password=")
+password = getpass.getpass(prompt="password=", stream=None)
 username = input("username=")
 requests = 0
 reddit = praw.Reddit(client_id=client_id, client_secret=client_secret, password=password, user_agent=username, username=username)
